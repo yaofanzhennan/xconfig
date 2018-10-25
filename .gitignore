@@ -3,7 +3,9 @@
 
 # Log file
 *.log
-
+.idea
+.vscode
+__pycache__
 # BlueJ files
 *.ctxt
 
