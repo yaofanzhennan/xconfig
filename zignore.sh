@@ -12,5 +12,7 @@ rnd=$(rand 1 50)
 
 python3 _main.py
 git pull origin master
-git commit -am 'update ' $rnd
+git add .
+echo $rnd
+git commit -m "update $rnd"
 git push origin master

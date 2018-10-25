@@ -18,7 +18,7 @@ def random_write(file_name):
 
 def main():
     file_types = ['.java', '.py', '.c']
-    cur_path = path.dirname(__file__)
+    cur_path = path.dirname(path.abspath(__file__))
     write_file_cnt = random.randint(1, 10)
 
     for i in range(0, write_file_cnt):
