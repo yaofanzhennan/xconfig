@@ -16,7 +16,7 @@ function commit_once(){
 commit_cnt=$(rand 1 9)
 for ((i=0;i<=$commit_cnt;i+=1))
    do
-     commit_once()
+     commit_once
    done
 
 git pull origin master
