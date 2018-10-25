@@ -13,10 +13,8 @@ function commit_once(){
     git commit -m "update `date` $RANDOM"
 }
 
-cur_dir="$(basename $0) $(dirname $0) -- $filepath " 
-echo $cur_dir
-cd $cur_dir
-
+#cur_dir="$(basename $0) $(dirname $0) -- $filepath " 
+cd "$(dirname "$0")"
 
 commit_cnt=$(rand 1 9)
 for ((i=0;i<=$commit_cnt;i+=1))
