@@ -4,6 +4,11 @@ import uuid
 
 
 def random_write(file_name):
+    """
+    修改文件的随机几行
+    :param file_name:
+    :return:
+    """
     line_cnt = random.randint(1, 20)  # 修改多少行
     with open(file_name, "w+", encoding='utf-8') as f:
         lines = f.readlines(line_cnt)
