@@ -14,5 +14,5 @@ python3 _main.py
 git pull origin master
 git add .
 echo $rnd
-git commit -m "update $rnd"
+git commit -m "update `date` $rnd"
 git push origin master
