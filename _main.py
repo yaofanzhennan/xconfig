@@ -1,6 +1,5 @@
 from os import path
-import random
-import uuid
+import random, uuid
 
 
 def random_write(file_name):
@@ -32,4 +31,6 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # 保证1/5时间没提交
+    if random.randint(1,5)>1:
+        main()
