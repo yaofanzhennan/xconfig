@@ -24,3 +24,6 @@ for ((i=0;i<=$commit_cnt;i+=1))
 
 git pull origin master
 git push origin master
+
+git push bpmw master
+
